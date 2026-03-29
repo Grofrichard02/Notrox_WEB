@@ -1,0 +1,65 @@
+.profile-sidebar {
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    padding: 0 25px 15px 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #555;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-menu li.active a {
+    background-color: #f4f4f4;
+    color: #000;
+    font-weight: 600;
+    border-left: 4px solid #6366f1;
+}
+
+.sidebar-menu a:hover {
+    background-color: #f9f9f9;
+    padding-left: 30px;
+    color: #6366f1;
+}
+
+.sidebar-menu a.delete-account {
+    color: #ef4444;
+}
+
+.sidebar-menu a.delete-account:hover {
+    background-color: #fef2f2;
+}
