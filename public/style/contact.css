@@ -1,0 +1,103 @@
+body {
+    background: radial-gradient(circle at top right, #111827, #080808);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+}
+#titlesectiona {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+#titlesectiona h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    letter-spacing: 6px;
+    color: white;
+    text-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+    margin-bottom: 0;
+}
+.blue-dash {
+    width: 80px;
+    height: 4px;
+    background-color: #2b57ff;
+    margin: 20px auto;
+    border-radius: 2px;
+    box-shadow: 0 0 15px #2b57ff;
+}
+.contact-container {
+    max-width: 1300px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+.info-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: 0.3s ease;
+}
+.info-card:hover {
+    border-color: #2b57ff;
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateX(10px);
+}
+.info-icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(43, 87, 255, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #2b57ff;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(43, 87, 255, 0.1);
+}
+.info-text h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #8b949e;
+    margin-bottom: 5px;
+}
+.info-text h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+.map-wrapper-premium {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    position: relative;
+}
+.map-wrapper-premium iframe {
+    filter: grayscale(1) invert(0.9) contrast(1.2);
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.map-wrapper-premium:hover iframe {
+    filter: grayscale(0) invert(0) contrast(1);
+    opacity: 1;
+}
+@media (max-width: 991px) {
+    .map-wrapper-premium {
+        margin-top: 20px;
+        min-height: 350px;
+    }
+    .info-card:hover {
+        transform: translateY(-5px);
+    }
+}
