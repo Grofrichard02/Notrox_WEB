@@ -1,0 +1,98 @@
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.login-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 450px;
+}
+.login-header-bar {
+    background-color: #2b57ff;
+    padding: 20px;
+    text-align: center;
+}
+.login-header-bar h2 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+.login-body {
+    padding: 40px 30px;
+}
+.input-group-custom {
+    margin-bottom: 25px;
+}
+.input-label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.login-body input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+    outline: none;
+}
+.login-body input:focus {
+    border-color: #2b57ff;
+    background-color: #f8faff;
+}
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #2b57ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+#loginBtn {
+    width: 100%;
+    background-color: #2b57ff;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(43, 87, 255, 0.3);
+}
+#loginBtn:hover {
+    background-color: #1a44e0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(43, 87, 255, 0.4);
+}
+.register-redirect {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: #666;
+}
+.register-redirect a {
+    color: #2b57ff;
+    font-weight: 700;
+    text-decoration: none;
+}
