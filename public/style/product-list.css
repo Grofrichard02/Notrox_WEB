@@ -1,0 +1,126 @@
+:root {
+    --bg: #0b0e14;
+    --header-bg: rgba(13, 17, 23, 0.95);
+    --neon-blue: #2563eb;
+    --card-bg: #161b22;
+    --text-main: #ffffff;
+    --text-dim: #8b949e;
+    --border: #30363d;
+}
+* { box-sizing: border-box; }
+body { 
+    background-color: var(--bg); 
+    color: var(--text-main); 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    padding: 0;
+}
+header {
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+@media (min-width: 992px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+}
+.logo { font-weight: bold; font-size: 20px; color: var(--neon-blue); letter-spacing: 2px; text-decoration: none; }
+nav { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+nav button {
+    background: none; border: none; color: var(--text-dim);
+    font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.3s;
+    padding: 5px 10px;
+}
+nav button:hover, nav button.active { color: var(--neon-blue); }
+.container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
+.search-container { margin-bottom: 25px; }
+#pSearch { 
+    width: 100%; 
+    background: var(--card-bg); 
+    border: 1px solid var(--border); 
+    padding: 12px 15px; 
+    border-radius: 8px; 
+    color: white; 
+    font-size: 15px; 
+    outline: none; 
+    transition: 0.3s; 
+}
+#pSearch:focus { border-color: var(--neon-blue); box-shadow: 0 0 10px rgba(37, 99, 235, 0.2); }
+.product-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .product-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .p-top-row { justify-content: center; flex-wrap: wrap; }
+    .p-stats-row { justify-content: center; }
+}
+.product-item:hover { border-color: var(--neon-blue); }
+.p-img-sm {
+    width: 80px; height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+}
+.p-info-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+.p-top-row { display: flex; align-items: baseline; gap: 10px; }
+.p-name { color: #ffffff; font-weight: bold; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p-brand { color: var(--neon-blue); font-weight: 600; font-size: 12px; text-transform: uppercase; }
+.p-desc { color: var(--text-dim); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.p-stats-row { display: flex; gap: 15px; margin-top: 5px; font-size: 14px; }
+.p-price { color: var(--neon-blue); font-weight: bold; }
+.p-actions { display: flex; gap: 20px; font-size: 20px; flex-shrink: 0; }
+.p-actions i { cursor: pointer; transition: 0.2s; }
+.p-actions i:hover { transform: scale(1.2); }
+.edit-input { 
+    background: #0b0e14; 
+    border: 1px solid var(--neon-blue); 
+    color: white; padding: 8px; 
+    border-radius: 6px; 
+    width: 100%; 
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.modal { 
+    display: none; position: fixed; z-index: 2000; left: 0; top: 0; 
+    width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(5px);
+    padding: 15px;
+}
+.modal-content { 
+    background: #161b22; margin: 15% auto; padding: 25px; border-radius: 15px; 
+    width: 100%; max-width: 400px; border: 1px solid #ef4444; text-align: center; 
+}
+.modal-btns { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
+.btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; flex: 1; }
+.btn-cancel { background: #30363d; color: white; }
+.btn-delete { background: #ef4444; color: white; }
