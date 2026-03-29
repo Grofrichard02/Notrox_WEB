@@ -1,0 +1,82 @@
+.textf {
+    color: white;
+}
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #6366f1;
+    display: inline-block;
+}
+.order-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.order-card:hover { 
+    border-color: #2b57ff; 
+}
+.order-header-info { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+.order-id-label { 
+    font-family: 'Bebas Neue'; 
+    font-size: 1.2rem; 
+    color: #2b57ff; 
+}
+.status-pill { 
+    padding: 4px 12px; 
+    border-radius: 50px; 
+    font-size: 12px; 
+    font-weight: 700; 
+    background: rgba(43, 87, 255, 0.1); 
+    color: #2b57ff; 
+}
+.details-overlay {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: #080808; 
+    z-index: 2000; 
+    overflow-y: auto;
+}
+.back-btn { 
+    background: none; 
+    border: none; 
+    color: #2b57ff; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+}
+.item-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #222; 
+}
+.item-img { 
+    width: 60px; 
+    height: 60px; 
+    object-fit: contain; 
+    background: #111; 
+    border-radius: 8px; 
+}
+@media (max-width: 991px) {
+    .profile-sidebar { 
+        position: relative; 
+        top: 0; 
+        width: 100%; 
+        margin-bottom: 30px; 
+    }
+}
