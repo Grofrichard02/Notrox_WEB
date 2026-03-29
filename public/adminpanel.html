@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notrox Admin</title>
+    <script src="script/auth-check.js"></script>
+    <link rel="icon" type="image/png" href="img/Notrox.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style/adminpanel.css">
+</head>
+<body>
+<header>
+    <div class="logo">NOTROX ADMIN</div>
+    <nav>
+        <button class="active">USER</button>
+        <button onclick="goToListProd()">PRODUCTS</button>
+        <button onclick="goToOrder()">ORDERS</button>
+        <button onclick="goToProductAdd()">ADD</button>
+        <button onclick="logout()" style="color: #ff4d4d;">LOGOUT</button>
+    </nav>
+</header>
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="userSearch" placeholder="Keresés..." oninput="filterUsers()">
+    </div>
+    <div id="userList" class="user-list"></div>
+</div>
+<div id="addressModal" class="modal">
+    <div class="modal-content">
+        <h2 id="addrTitle" style="color: #2563eb; margin-top: 0; font-size: 18px;"></h2>
+        <div class="addr-details-container">
+            <div class="addr-section">
+                <h3 style="font-size: 14px; color: #8b949e;"><i class="fa-solid fa-truck"></i> Szállítás</h3>
+                <div id="shippingList" class="addr-list-wrapper"></div>
+            </div>
+            <div class="addr-section">
+                <h3 style="font-size: 14px; color: #8b949e;"><i class="fa-solid fa-file-invoice"></i> Számlázás</h3>
+                <div id="billingList" class="addr-list-wrapper"></div>
+            </div>
+        </div>
+        <div class="modal-btns" style="margin-top: 20px;">
+            <button class="cancel-btn" onclick="closeModal('addressModal')">Bezárás</button>
+        </div>
+    </div>
+</div>
+<div id="deleteModal" class="modal">
+    <div class="modal-content danger">
+        <h2 style="color: #ef4444; margin-top: 0; font-size: 18px;">FIGYELEM!</h2>
+        <p style="font-size: 13px;">Biztosan törölni szeretné <strong id="deleteUserName"></strong> felhasználót?</p>
+        <p style="font-size: 12px; color: #8b949e;">Írja be a megerősítéshez: <strong>DELETE</strong></p>
+        <input type="text" id="deleteConfirmInput" placeholder="DELETE">
+        <div class="modal-btns">
+            <button class="cancel-btn" onclick="closeModal('deleteModal')">Mégse</button>
+            <button id="confirmDeleteBtn" class="delete-btn-final" disabled>Törlés</button>
+        </div>
+    </div>
+</div>
+<script src="script/adminpanel.js"></script>
+</body>
+</html>
