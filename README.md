@@ -15,7 +15,7 @@
   </p>
 
   <a href="https://notrox.hu">
-    <img src="https://img.shields.io/badge/WEBOLDAL-NOTROX.HU-5865F2?style=for-the-badge&logo=googlechrome&logoColor=white" />
+    <img src="https://media.discordapp.net/attachments/1112336909780398100/1481321746492817602/Notrox.png?ex=69cbf061&is=69ca9ee1&hm=8f1b6b5d193f42008bc473b355a465977b80e49220f88e6bf7a03632e9f9563d&=&format=webp&quality=lossless&width=672&height=1008" />
   </a>
 </div>
 
@@ -38,8 +38,8 @@ A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok
 ```bash
 npm install
 node server.js
+```
 <h2 style="color: #5865F2;">Környezeti változók</h2>
 <div align="center">
 <p>© 2026 NOTROX GROUP</p>
 </div>
-```
