@@ -39,7 +39,9 @@ A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok
 npm install
 node server.js
 ```
-<h2 style="color: #5865F2;">Környezeti változók</h2>
+<h2 style="color: #5865F2;">Teszt fiókok</h2>
+User: TesztElek:TesztElek123
+Admin: Admin:Admin123
 <div align="center">
 <p>© 2026 NOTROX GROUP</p>
 </div>
