@@ -40,8 +40,9 @@ npm install
 node server.js
 ```
 <h2 style="color: #5865F2;">Teszt fiókok</h2>
-User: TesztElek:TesztElek123
-Admin: Admin:Admin123
+<b>User:</b> TesztElek:TesztElek123
+
+<b>Admin:</b> Admin:Admin123
 <div align="center">
 <p>© 2026 NOTROX GROUP</p>
 </div>
