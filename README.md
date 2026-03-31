@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    <strong>Prémium Gaming Hardver Webáruház és Adminisztrációs Rendszer</strong>
+    <strong>Prémium Gaming Hardver Webáruház És Webes Adminisztrációs Rendszer</strong>
   </p>
 
   <a href="https://notrox.hu">
@@ -20,6 +20,10 @@
 </div>
 
 ---
+
+<h2 style="color: #5865F2">Információ</h2>
+
+Az itt található forráskódok átírásra kerültek, hogy a **localhost-on** könnyedén futtatható legyen a webáruház és az adminisztrációs felület. <b>Az adatbázis adatai nem felelnek meg a valóságnak!</b>
 
 <h2 style="color: #5865F2;">Leírás</h2>
 
@@ -30,6 +34,12 @@ Ebben a tárolóban találhatóak a **Node.js** backend és a **NOTROX** webolda
 A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok között:
 
 <a href= "https://github.com/Grofrichard02/Notrox_WEB/blob/main/notrox_dokumentacio_v3.pdf">📄 <b>notrox_dokumentacio_v3.pdf</b></a>
+
+<h2 style="color: #5865F2;">SQL tábla szerkezet, és adatok</h2>
+
+A projekt adatbázisából exportálásra került az adatbázis szerkezete és a benne lévő adatok:
+
+<a href= "https://github.com/Grofrichard02/Notrox_WEB/blob/main/notrox.sql">📄 <b>notrox.sql</b></a>
 
 ---
 
