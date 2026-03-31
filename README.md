@@ -29,7 +29,7 @@ Ebben a tárolóban találhatóak a **Node.js** backend és a **NOTROX** webolda
 
 A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok között:
 
-📄 **notrox_dokumentacio_v3.pdf**
+<a href= "https://github.com/Grofrichard02/Notrox_WEB/blob/main/notrox_dokumentacio_v3.pdf">📄 <b>notrox_dokumentacio_v3.pdf</b></a>
 
 ---
 
