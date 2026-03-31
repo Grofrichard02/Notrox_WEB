@@ -33,6 +33,15 @@ A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok
 
 ---
 
+<h2 style="color: #5865F2;">Asztali és mobil alkalmazások</h2>
+
+A projekthez készült **Mobil** és **Asztali** alkalmazásokat a következő hivatkozásokon elérheti:
+
+<a href= "https://github.com/PejoKristof666/Notrox_WPF">💻 <b>WPF Asztali admin felület</b></a>
+
+<a href= "https://github.com/PejoKristof666/Notrox_avalonia">📱 <b>Avalonia Mobil admin felület</b></a>
+
+---
 <h2 style="color: #5865F2;">Telepítés</h2>
 
 ```bash
