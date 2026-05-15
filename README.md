@@ -35,6 +35,12 @@ A projekthez készült teljes körű szakmai dokumentáció elérhető a fájlok
 
 <a href= "https://github.com/Grofrichard02/Notrox_WEB/blob/main/notrox_dokumentacio_v3.pdf">📄 <b>notrox_dokumentacio_v3.pdf</b></a>
 
+<h2 style="color: #5865F2;">Notrox Prezentációs PowerPoint</h2>
+
+A projekthez készült prezentációs PowerPoint fájl:
+
+<a href= "https://github.com/Grofrichard02/Notrox_WEB/blob/main/NOTROX_Prezentacio_Final.pptx">📄 <b>NOTROX_Prezentacio_Final.pptx</b></a>
+
 <h2 style="color: #5865F2;">SQL tábla szerkezet, és adatok</h2>
 
 A projekt adatbázisából exportálásra került az adatbázis szerkezete és a benne lévő adatok:
